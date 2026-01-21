@@ -41,27 +41,6 @@ This formula reflects real productivity behavior: deadlines first, high-impact t
 • Added quick-win bonus for motivation and psychological momentum  
 • Applied dependency penalty to prevent scheduling blocked tasks first
 
-## Time Breakdown
-
-Project Setup – 20 min  
-Models and Scoring Algorithm – 150 min  
-API Development – 70 min  
-Frontend (HTML + CSS + JS) – 90 min  
-Debugging and CORS Fixes – 60 min  
-Documentation – 20 min  
-Total Time: ~7 hours
-
-## Bonus Challenges
-
-The following optional extensions were suggested in the assignment. If completed, they allow additional depth and creativity:
-
-• Dependency Graph Visualization: Detect and visually flag circular dependencies (30–45 min)  
-• Date Intelligence: Consider weekends/holidays when calculating urgency (30 min)  
-• Eisenhower Matrix View: Display tasks on a 2D grid (Urgent vs Important) (45 min)  
-• Learning System: Allow users to mark if suggested tasks were helpful and adjust the algorithm (1 hour)  
-• Unit Tests: Write comprehensive tests for your scoring algorithm (45 min)
-
-(For this submission, the core assignment was fully completed. Bonus challenges were not implemented due to time constraints, but would be exciting improvements for future development.)
 
 ## Future Improvements
 
