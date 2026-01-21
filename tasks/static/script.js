@@ -7,6 +7,8 @@ document.getElementById("analyzeBtn").addEventListener("click", analyzeTasks);
 document.getElementById("suggestBtn").addEventListener("click", suggestTasks);
 
 // Convert textbox JSON into array
+const API_BASE = "https://smarttaskanalyzer-qseo.onrender.com";
+
 function parseTasks() {
   try {
     return JSON.parse(taskInput.value);
@@ -20,7 +22,7 @@ async function analyzeTasks() {
   const tasks = parseTasks();
   if (!tasks) return;
 
-  const res = await fetch("http://127.0.0.1:8000/api/tasks/analyze/", {
+  const res = await fetch((`${API_BASE}/api/tasks/analyze/`), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(tasks),
@@ -55,7 +57,7 @@ async function suggestTasks() {
   const tasks = parseTasks();
   if (!tasks) return;
 
-  const res = await fetch("http://127.0.0.1:8000/api/tasks/suggest/", {
+  const res = await fetch(`${API_BASE}/api/tasks/suggest/`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(tasks),

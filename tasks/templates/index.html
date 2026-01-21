@@ -1,14 +1,14 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Smart Task Analyzer</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'favicon1.png' %}">
 
-
+    <!-- Plain CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon1.png">
 </head>
+
 <body>
 <div class="container">
     <h1>🧠 Smart Task Analyzer</h1>
@@ -17,7 +17,8 @@
     <div class="layout">
         <div class="left-panel">
             <h2>Task Input</h2>
-            <textarea id="taskInput" rows="18">
+
+<textarea id="taskInput" rows="18">
 [
   {
     "title": "Complete Mini Project",
@@ -32,10 +33,9 @@
     "importance": 9,
     "estimated_hours": 1,
     "dependencies": ["Prepare Resume","Placement Preparation"]
-  },
+  }
 ]
 </textarea>
-
 
             <div class="controls">
                 <button id="analyzeBtn">Analyze</button>
@@ -46,12 +46,13 @@
         <div class="right-panel">
             <h2>Results</h2>
             <div id="results"></div>
+
             <h2>Suggestions</h2>
             <div id="suggestions"></div>
         </div>
     </div>
 </div>
 
-<script src="{% static 'script.js' %}"></script>
+<script src="script.js"></script>
 </body>
 </html>
