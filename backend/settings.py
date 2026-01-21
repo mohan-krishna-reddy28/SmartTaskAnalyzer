@@ -13,11 +13,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY SETTINGS
 SECRET_KEY = "django-insecure-twwr3*qpvylb-o^fo5u*1ozt)4*6@u#i78x^5bja&r+h6e=a-r"
 
-DEBUG = True  # Change to False during deployment
+DEBUG = False  # Change to False during deployment
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
     "localhost",
+    "127.0.0.1",
+    ".onrender.com",
 ]
 
 
