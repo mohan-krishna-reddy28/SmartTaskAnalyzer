@@ -4,6 +4,10 @@ from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 from .scoring import calculate_task_score
 
+def home(request):
+    return render(request, "index.html")
+
+
 @csrf_exempt
 def analyze_tasks(request):
     if request.method != "POST":

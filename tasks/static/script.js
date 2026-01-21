@@ -29,7 +29,7 @@ async function analyzeTasks() {
   const sorted = await res.json();
   displayResults(sorted);
 }
-
+  
 function displayResults(tasks) {
   resultsDiv.innerHTML = "";
 
